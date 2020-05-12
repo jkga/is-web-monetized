@@ -31,9 +31,9 @@ In your terminal, run `monetized [URL]`
 or using as a dependency 
 ```javascript
   const { isWebMonetized } from 'is-web-monetized'
-  const URL = 'example.com'
+  const url = 'example.com'
   // return a promise
-  isWebMonetized('URL').then(obj => {
+  isWebMonetized(url).then(obj => {
     /*
       {
         monetized <boolean>,
