@@ -1,0 +1,32 @@
+{
+  "name": "is-web-monetized",
+  "version": "0.1.0",
+  "description": "A very simple tool for checking if monetization is enabled in a certain website",
+  "main": "./src/index.js",
+  "bin": {
+    "monetized": "./src/cli.js"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "jsdom": "^16.2.2",
+    "standard": "^14.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "standard": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkga/is-web-monetized.git"
+  },
+  "keywords": [
+    "web-monetization"
+  ],
+  "author": "johnkennethgibasabella@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jkga/is-web-monetized/issues"
+  },
+  "homepage": "https://github.com/jkga/is-web-monetized#readme"
+}
