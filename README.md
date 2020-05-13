@@ -18,9 +18,9 @@ A very simple tool for checking if web monetization is enabled on a certain webs
   npm install is-web-monetized
 ```
 
-## USAGE
+## Usage
 You can check if the website uses the Web Monetization API without going to the website.   
-> Node module MUST be installed globally   
+> :bulb: Node module MUST be installed globally   
 ```javascript
   npm install is-web-monetized -g
 ```
@@ -32,7 +32,7 @@ or using as a dependency
 ```javascript
   const { isWebMonetized } from 'is-web-monetized'
   const url = 'example.com'
-  // return a promise
+
   isWebMonetized(url).then(obj => {
     /*
       {
@@ -44,3 +44,8 @@ or using as a dependency
     console.log(obj)
   }).catch(err => console.log(err))
 ```
+
+## Support
+Do you think this is cool? don't hesitate to buy me some coffee!   
+
+<a href="https://www.buymeacoffee.com/jkga" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;"></a>
