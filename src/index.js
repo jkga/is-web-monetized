@@ -15,7 +15,8 @@ exports.isWebMonetized = (url) => {
       if (!URI.host) return reject(new Error('No Available Host'))
 
       const results = await fetch(URI.href).then(res => res.text()).catch(e => reject(e))
-      const dom = new JSDOM(results)
+      const virtualConsole = new jsdom.VirtualConsole()
+      const dom = new JSDOM(results, { virtualConsole })
       const monetizationMeta = dom.window.document.querySelector('meta[name="monetization"]')
 
       payload.url = URI.href

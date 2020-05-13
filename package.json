@@ -1,6 +1,6 @@
 {
   "name": "is-web-monetized",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A very simple tool for checking if monetization is enabled in a certain website",
   "main": "./src/index.js",
   "bin": {
@@ -8,10 +8,11 @@
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
-    "jsdom": "^16.2.2",
+    "jsdom": "^16.2.2"
+  },
+  "devDependencies": {
     "standard": "^14.3.4"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "standard": "standard"
